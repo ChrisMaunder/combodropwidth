@@ -2,9 +2,7 @@
 
 A simple tutorial explaining how to set the width of a combo dropdown list so that all items are fully visible
 
-
-
-![Sample Image - ComboDropWidth.gif](https://raw.githubusercontent.com/ChrisMaunder/combodropwidth/master/docs/assets/ComboDropWidth.gif)
+![Sample Image - ComboDropWidth.gif](https://raw.githubusercontent.com/ChrisMaunder/combodropwidth/master/docs/assets/combodropwidth.gif)
 
 ## Introduction
 
@@ -20,14 +18,14 @@ that will always present a list that is wide enough to hold the widest string.
 To start we use the ClassWizard to create a new class `CMyComboBox`
 derived from `CComboBox`.
 
-![Creating a new class](https://raw.githubusercontent.com/ChrisMaunder/combodropwidth/master/docs/assets/ComboDropWidth1.gif)
+![Creating a new class](https://raw.githubusercontent.com/ChrisMaunder/combodropwidth/master/docs/assets/combodropwidth1.gif)
 
 Then use the class wizard to add an override for the reflected message CBN\_DROPDOWN.
 A reflected message is a message that the control sends to its parent, but which the
 parent lets the control have a chance at processing first. The "=" before the CBN\_DROPDOWN
 in the ClassWizard indicates it's a reflected message.
 
-![Adding a message handler](https://raw.githubusercontent.com/ChrisMaunder/combodropwidth/master/docs/assets/ComboDropWidth2.gif)
+![Adding a message handler](https://raw.githubusercontent.com/ChrisMaunder/combodropwidth/master/docs/assets/combodropwidth2.gif)
 
 Call the message handler `OnDropDown` and add the following code
 
@@ -96,7 +94,7 @@ Go to the Member Variables tab in ClassWizard and select the Form or Dialog clas
 contains your combobox control. Choose "Add Variable...", specify a name, set the Category
 as "Control" and then set the variable type as `CMyComboBox`.
 
-![Subclassing the control](https://raw.githubusercontent.com/ChrisMaunder/combodropwidth/master/docs/assets/ComboDropWidth3.gif)
+![Subclassing the control](https://raw.githubusercontent.com/ChrisMaunder/combodropwidth/master/docs/assets/combodropwidth3.gif)
 
 If you used the  **MyComboBox** files from the download files for this article and
 simply included them in your project without rebuilding the class file (delete the .clw
